@@ -154,6 +154,18 @@ select:nth-child(3) {
         width: 300px;
         background-color: red;
     }
+    
+    select {
+        padding: 4px 20px;
+        /* background-color: red; */
+        padding: var(--PADDING-SM);
+        justify-content: center;
+        border: 2px solid var(--ALT-COLOR);
+        border-radius: 7px;
+        gap: 12px;
+    
+    }
+    
 
     .inupt_wrap {
         flex-direction: column;
