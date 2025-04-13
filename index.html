@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature | Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="form">
+        <h2> Temperature Converter</h2>
+        <p> <span>Enter the Temperature</span>, <span>select units, and</span> submit</p>
+
+        <div id="input" class="input_wrap">
+            <input type="number" id="input_value">
+            <select value="" id="fromUnit">
+                <option value="C" id="celsius1">Celsius</option>
+                <option value="K" id="kelvin1">Kelvin</option>
+                <option value="D" id="degree1">Degree</option>
+            </select>
+            <select value="" id="toUnit">
+                <option value="C" id="celsius2">Celsius</option>
+                <option value="K" id="kelvin2">Kelvin</option>
+                <option value="D" id="degree2">Degree</option>
+            </select>
+        </div>
+        <div class="button_wrap">
+            <button onclick="button()" id="btn" type="button"> Convert </button>
+            <input type="text" id="myResult" readonly>
+        </div>
+
+    </form>
+
+
+    <script src="/converter/script.js"></script>
+</body>
+
+</html>
