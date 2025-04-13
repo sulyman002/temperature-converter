@@ -11,6 +11,7 @@ function button() {
     const toUnit = document.getElementById('toUnit').value;
 
     let result;
+    let end;
 
     if (fromUnit === toUnit) {
         result = value;
