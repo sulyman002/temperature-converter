@@ -1,6 +1,6 @@
 
 const myResult = document.getElementById('myResult');
-// let result = value;
+
 
 
 
