@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--FF) ;
+    font-family: var(--FF);
 }
 
 :root {
@@ -48,46 +48,50 @@ form {
     padding: 20px;
 }
 
-.form h2  {
+.form h2 {
     font-size: var(--FS);
     color: var(--COLOR);
     margin: var(--MARGIN);
     white-space: nowrap;
     overflow: hidden;
-    text-align: center; 
+    text-align: center;
     margin-bottom: 30px;
 }
-.form p{
+
+.form p {
     font-weight: 200;
     margin: var(--MARGIN);
     text-align: center;
 
 }
 
-p span{
+p span {
     flex-flow: row, nowrap;
 
 }
 
-#input{
+#input {
     display: flex;
     margin-bottom: var(--MARGIN);
     flex-wrap: nowrap;
+
+}
+
+#input_value {
+    padding: var(--PADDING-SM);
+    border-radius: 7px;
+    border: 2px solid var(--ALT-COLOR);
+
+}
+
+.input_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     
 }
 
-#input_value{
-    padding: var(--PADDING-SM);
-    border-radius: 7px;
-    border: 1px solid;
-
-}
-.input_wrap {
-    display:  flex ;
-    flex-direction: column;
-    gap: 20px;
-}
-#input{
+#input {
     padding: 5px;
     border-radius: 7px;
     justify-content: flex-start;
@@ -95,42 +99,53 @@ p span{
 
 }
 
-.button_wrap { 
+.button_wrap {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-select{
+select {
     padding: 4px 20px;
     /* background-color: red; */
     padding: var(--PADDING-SM);
     justify-content: center;
+    border: 2px solid var(--ALT-COLOR);
     border-radius: 7px;
     gap: 12px;
 
 }
 
-select:nth-child(3){
+select:nth-child(3) {
 
     /* background-color: red; */
 
 }
 
-#btn{
+#btn {
     padding: var(--PADDING-SM);
     border-radius: 7px;
-    border: .5px ;
+    border: .5px;
     background-color: var(--ALT-COLOR);
     color: var(--LIGHT-COLOR);
     cursor: pointer;
 }
 
-.button_wrap input{
+.button_wrap input {
     margin-top: 8px;
     padding: var(--PADDING-SM);
     border-radius: 7px;
     border: 1px solid;
+}
+
+
+#myResult {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 2px solid var(--ALT-COLOR);
+    background-color: #eec1d344;
+
 }
 
 @media screen and (max-width: 380px) {
@@ -139,7 +154,8 @@ select:nth-child(3){
         width: 300px;
         background-color: red;
     }
-    .inupt_wrap { 
+
+    .inupt_wrap {
         flex-direction: column;
     }
 
